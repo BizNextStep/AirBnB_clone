@@ -20,13 +20,14 @@ class BaseModel:
             *args: Variable length argument list.
             **kwargs: Arbitrary keyword arguments.
             Each key of this dictionary is an attribute name,
-            and each value of this dictionary is the value of the attribute name.
+            and each value of this dict is the value of the attributes name
         """
         if kwargs:
             for key, value in kwargs.items():
                 if key != '__class__':
-                if key in ['created_at', 'updated_at']:
-                        value = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
+                    if key in ['created_at', 'updated_at']:
+                        value = datetime.strptime(
+                                value, '%Y-%m-%dT%H:%M:%S.%f')
                     setattr(self, key, value)
         else:
             self.id = str(uuid.uuid4())
