@@ -5,7 +5,6 @@
 import uuid
 from datetime import datetime
 
-
 class BaseModel:
     """Represents the BaseModel of the AirBnB clone project.
 
@@ -15,15 +14,24 @@ class BaseModel:
         updated_at (datetime): The datetime when the BaseModel instance was last updated.
     """
 
-    def __init__(self):
-        """Initialize a new BaseModel instance.
+    def __init__(self, *args, **kwargs):
+        """Initialize a new BaseModel instance from a dictionary representation.
 
-        Sets the id attribute to a unique UUID, created_at and updated_at
-        attributes to the current datetime.
+        Args:
+            *args: Variable length argument list.
+            **kwargs: Arbitrary keyword arguments. Each key of this dictionary is an attribute name,
+                     and each value of this dictionary is the value of the attribute name.
         """
-        self.id = str(uuid.uuid4())  # Assign a unique ID using uuid.uuid4()
-        self.created_at = datetime.now()  # Assign current datetime to created_at attribute
-        self.updated_at = datetime.now()  # Assign current datetime to updated_at attribute
+        if kwargs:
+            for key, value in kwargs.items():
+                if key != '__class__':
+                    if key in ['created_at', 'updated_at']:
+                        value = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
+                    setattr(self, key, value)
+        else:
+            self.id = str(uuid.uuid4())  # Assign a unique ID using uuid.uuid4()
+            self.created_at = datetime.now()  # Assign current datetime to created_at attribute
+            self.updated_at = datetime.now()  # Assign current datetime to updated_at attribute
 
     def __str__(self):
         """Return a string representation of the BaseModel instance."""
