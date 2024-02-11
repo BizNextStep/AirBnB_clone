@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """defines a City class, a subclass of BaseModel"""
 from models.base_model import BaseModel
 
