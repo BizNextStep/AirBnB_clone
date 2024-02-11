@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines Amenity class, a subclass of BaseModel"""
+"""defines Amenity class, a subclass of BaseModel."""
 from models.base_model import BaseModel
 
 
