@@ -14,7 +14,8 @@ from models.review import Review
 
 
 class FileStorage:
-    """Serializes instances to JSON file and deserializes JSON file to instances.
+    """Serializes instances to JSON file and
+    deserializes JSON file to instances.
     Class Methods:
         all: Returns the object
         new: updates the dictionary id
@@ -25,25 +26,20 @@ class FileStorage:
         __objects (dict): A dictionary of instantiated objects.
         class_dict (dict): A dictionary of all the classes.
     """
-
-
     __file_path = "file.json"
     __objects = {}
     class_dict = {"BaseModel": BaseModel, "User": User, "Place": Place,
                   "Amenity": Amenity, "City": City, "Review": Review,
                   "State": State}
 
-
     def all(self):
         """Returns the dictionary __objects."""
         return self.__objects
-
 
     def new(self, obj):
         """Sets in __objects the obj with key <obj class name>.id."""
         key = "{}.{}".format(obj.__class__.__name__, obj.id)
         self.__objects[key] = obj
-
 
     def save(self):
         """Serializes __objects to the JSON file (path: __file_path)."""
