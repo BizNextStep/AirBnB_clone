@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''AirBnB clone project File Storage'''
+'''AirBnB clone project File Storage.'''
 import json
 from models.base_model import BaseModel
 from models.user import User
@@ -30,17 +30,17 @@ class FileStorage:
                   "State": State}
 
     def all(self):
-        '''Return dictionary of <class>.<id> : object instance'''
+        '''Return dictionary of <class>.<id> : object instance.'''
         return self.__objects
 
     def new(self, obj):
-        '''Set new __objects to existing dictionary of instances'''
+        '''Set new __objects to existing dictionary of instances.'''
         if obj:
             key = '{}.{}'.format(obj.__class__.__name__, obj.id)
             self.__objects[key] = obj
 
     def save(self):
-        """Save/serialize obj dictionaries to json file"""
+        """Save/serialize obj dictionaries to json file."""
         obj_dict = {}
 
         for key, obj in self.__objects.items():
