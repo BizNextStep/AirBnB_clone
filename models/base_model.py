@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-
-
 from datetime import datetime
 from uuid import uuid4
-import models from storage
+import models
 
 """
 Parent class to all classes in the AirBnB clone project
@@ -61,10 +59,10 @@ class BaseModel():
         Instance method to:
         - update current datetime
         - invoke save() function &
-        - save to serialized file using storage
+        - save to serialized file
         """
         self.updated_at = datetime.now()
-        storage.save()
+        models.storage.save()
 
     def to_dict(self):
         """
