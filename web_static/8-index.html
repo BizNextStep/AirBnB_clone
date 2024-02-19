@@ -1,89 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-    <link rel="stylesheet" type="text/css" href="styles/8-places.css">
-    <link rel="icon" type="image/png" href="./images/icon.png">
-    <link rel="icon" type="image/png" href="./images/icon_group.png">
-    <link rel="icon" type="image/png" href="./images/icon_bed.png">
-    <link rel="icon" type="image/png" href="./images/icon_bath.png">
-    <title>Airbnb Clone</title>
-  </head>
-  <body>
-    <header>
-    </header>
-    <div class="container">
-      <section class="filters">
-	      <div class="locations">
-	        <h3>States</h3>
-          <h4>California, Arizona...</h4>
-          <ul class="popover">
-            <li><h2>Arizona:</h2>
-              <ul>
-                <li>Page</li>
-                <li>Page2</li>
-              </ul>
-            </li>
-            <li><h2>California:</h2>
-              <ul>
-                <li>San Francisco</li>
-                <li> Los Altos</li>
-              </ul>
-          </ul>
-        </div>
-        <div class="amenities">
-          <h3>Amenities</h3>
-          <h4>Internet, Kitchen...</h4>
-          <ul class="popover">
-            <li>Internet</li>
-            <li>TV<li>
-            <li>Kitchen</li>
-            <li>Iron</li>
-          </ul>
-        </div>
-	      <button>Search</button>
-      </section>
-      <section class="places">
-	      <h1>Places</h1>
-        <article>
-          <h2>My home</h2>
-          <div class="price_by_night">$80</div>
-          <div class="information">
-            <div class="max_guest">2 guests</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">1 bathroom</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> John Doe</div>
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-	      </article>
-        <article><h2>Tiny house</h2>
-          <div class="price_by_night">$50</div>
-          <div class="information">
-            <div class="max_guest">1 guest</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">1 bathroom</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Jake Obi</div>
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </article>
-        <article><h2>A suite</h2>
-          <div class="price_by_night">$160</div>
-          <div class="information">
-            <div class="max_guest">2 guests</div>
-            <div class="number_rooms">1 bedroom</div>
-            <div class="number_bathrooms">2 bathrooms</div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Jess Hassan</div>
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </article>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best School</title>
+  <link rel="stylesheet" href="styles/4-common.css">
+  <link rel="stylesheet" href="styles/3-header.css">
+  <link rel="stylesheet" href="styles/3-footer.css">
+  <link rel="stylesheet" href="styles/6-filters.css">
+  <link rel="stylesheet" href="styles/8-places.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Best School">
     </div>
-    <footer>
-      Best School
-    </footer>
-  </body>
+  </header>
+  <div class="container">
+    <section class="filters">
+      <div class="filters-item locations">
+        <h3>Locations</h3>
+        <h4>With fake contents</h4>
+        <ul class="popover">
+          <li>
+            <h2>State 1</h2>
+            <ul>
+              <li>City 1</li>
+              <li>City 2</li>
+            </ul>
+          </li>
+          <li>
+            <h2>State 2</h2>
+            <ul>
+              <li>City 3</li>
+              <li>City 4</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="filters-item amenities">
+        <h3>Amenities</h3>
+        <h4>With fake contents</h4>
+        <ul class="popover">
+          <li>Fake Amenity 1</li>
+          <li>Fake Amenity 2</li>
+        </ul>
+      </div>
+    </section>
+    <section class="places">
+      <h1>Places</h1>
+      <article>
+        <div class="price_by_night">$100</div>
+        <h2>Place 1</h2>
+        <div class="information">
+          <div class="max_guest">
+            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+            <br>
+            2 Guests
+          </div>
+          <div class="number_rooms">
+            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+            <br>
+            1 Bedroom
+          </div>
+          <div class="number_bathrooms">
+            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+            <br>
+            1 Bathroom
+          </div>
+        </div>
+        <div class="user">
+          <b>Owner:</b> Fake Owner
+        </div>
+        <div class="description">
+          Fake description
+        </div>
+      </article>
+      <article>
+        <div class="price_by_night">$200</div>
+        <h2>Place 2</h2>
+        <div class="information">
+          <div class="max_guest">
+            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+            <br>
+            4 Guests
+          </div>
+          <div class="number_rooms">
+            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+            <br>
+            2 Bedrooms
+          </div>
+          <div class="number_bathrooms">
+            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+            <br>
+            2 Bathrooms
+          </div>
+        </div>
+        <div class="user">
+          <b>Owner:</b> Fake Owner
+        </div>
+        <div class="description">
+          Fake description
+        </div>
+      </article>
+      <article>
+        <div class="price_by_night">$300</div>
+        <h2>Place 3</h2>
+        <div class="information">
+          <div class="max_guest">
+            <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+            <br>
+            6 Guests
+          </div>
+          <div class="number_rooms">
+            <i class="fa fa-bed fa-3x" aria-hidden="true"></i>
+            <br>
+            3 Bedrooms
+          </div>
+          <div class="number_bathrooms">
+            <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+            <br>
+            3 Bathrooms
+          </div>
+        </div>
+        <div class="user">
+          <b>Owner:</b> Fake Owner
+        </div>
+        <div class="description">
+          Fake description
+        </div>
+      </article>
+    </section>
+  </div>
+  <footer>
+    <div class="text">Best School</div>
+  </footer>
+</body>
 </html>
