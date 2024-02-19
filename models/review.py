@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines a Review class, a subclass of BaseModel class"""
+"""defines a Review class, a subclass of BaseModel class."""
 from models.base_model import BaseModel
 
 
