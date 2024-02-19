@@ -7,12 +7,3 @@ header {
 .logo img {
   height: 30px;
 }
-
-
-styles/3-footer.css
-
-footer {
-  height: 60px;
-  background-color: #00FF00;
-  line-height: 60px;
-}
